@@ -54,6 +54,7 @@
   .logo{
     width: 120px;
     margin-left: 20px;
+    margin-top: 10px;
   } 
   
   /*nav*/
@@ -235,7 +236,7 @@ margin-left: 40px;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-radius: 20px;
   margin: auto;
   max-width: 60%;
@@ -243,7 +244,7 @@ margin-left: 40px;
 }
 
 .hebergement_list h2{
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   width: 100%;
   padding-left: 40px;
@@ -264,9 +265,9 @@ margin-left: 40px;
   display: flex;
   size: 80px;
   background-color: white;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #f2f2f2;
   border-radius: 20px;
-  box-shadow: #e0e0e0;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
   margin: 5px;
   padding:5px;
   width: max-content;
@@ -298,10 +299,10 @@ margin-left: 40px;
   display: flex;
   flex-direction:column;
   flex-wrap: wrap;
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-radius: 20px;
   margin: auto;  
-  min-height: 735px;
+  min-height: 755px;
   width: 30%;
 }
 
@@ -310,8 +311,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 flex-wrap: wrap;
-width: fit-content;
-height:fit-content;
+width: 90%;
+height:25%;
 margin-top: 40px;
 padding-left: 40px;
 }
@@ -319,11 +320,12 @@ padding-left: 40px;
 .most_popular_title{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  
-  
+  align-items: center;  
 }
 
+.fa-chart-line{
+  font-size: 25px;
+}
 
 .popular_room_image {
   width: 150px;
@@ -341,23 +343,23 @@ padding-left: 40px;
   background-color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border:1px solid #f2f2f2;
+  border:1px solid white;
   width: 250px;
-  height: max-content;
-  margin-left:20px;
+ 
 }
 
 .most_popular a{
   display: flex;
-  border: 5px solid #f2f2f2;
-  background-color: #f2f2f2;
+  border: 5px solid white;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
   border-radius: 20px; 
   margin: 10px;
-  
+  width:90%;
 }
 
 .most_popular h2{
-  font-size: 20px; 
+  font-size: 25px; 
   padding-left: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -377,20 +379,20 @@ padding-left: 40px;
 }
 
 .activity_image_S{
-  width: 400px;
+  width: 100%;
   height: 190px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   }
   .activity_image_M{
-    width: 400px;
+    width: 100%;
     height: 230px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
   
   .activity_image_L{
-    width: 400px;
+    width: 100%;
     height: 500px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -405,7 +407,7 @@ padding-left: 40px;
   }
   
   .activity h2 {
-    font-size: 1.5em;
+    font-size: 25px;
   }
   .activity h3 {
     font-size: 1em;
@@ -418,7 +420,7 @@ padding-left: 40px;
     border-radius: 25px;
     margin-bottom: 25px;
     height: fit-content;
-    width: fit-content;
+    width: 22%;
     box-shadow: 5px 5px 5px 5px #e0e0e0;
   }
   
@@ -426,7 +428,7 @@ padding-left: 40px;
 /* Footer */
 
 footer h2 {
-  font-size: 1.1em;
+  font-size: 15px;
   font-family: "Raleway-Bold";
   padding-left: 0;
 }
@@ -458,4 +460,15 @@ footer li {
   justify-content: space-between;
   flex-direction: row;
   margin-right: 250px;
+}
+
+@media screen and (max-width: 480px) {
+  
+  
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1281px) {
+  
+  
 }
