@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/3316269379.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
@@ -25,6 +26,7 @@
        
         <!--barre de navigation-->
         <nav>
+          <div class="nav_ancre">
           <ul id="nav_link">
             <li id="hebergement">
               <a href="#ancre-1" class="hebergement_link">Hébergements</a>
@@ -32,13 +34,27 @@
             <li id="activities">
               <a href="#ancre-2" class="activity_link">Activités</a>
             </li>
+            </ul>
+            <ul>
             <li id="register">
               <a href="register.html" class="register_link"> S'inscrire</a>
             </li>
-          </ul>
+            </ul>
+        </div>
         </nav>
       </header>
-     
+      <div class="nav_link_phone">
+        <div class="nav_ancre_phone">
+        <ul id="nav_link_2">
+          <li id="hebergement_phone">
+            <a href="#ancre-1" class="hebergement_link">Hébergements</a>
+          </li>
+          <li id="activities_phone">
+            <a href="#ancre-2" class="activity_link">Activités</a>
+          </li>
+        </ul>
+      </div>
+      </div>
       <!--section titre-->
       <div class="title">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -49,14 +65,17 @@
       <form class="city">
         <div class="search_bar">
           <button class="location_button">
-            <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-map-marker-alt"></i>
           </button>
           <input
             type="text"
             class="city_textfield"
             placeholder="Marseille, France"
           />
-          <input type="submit" value="Rechercher" class="search_button" />
+          <button class="search_button">
+          <i class="fas fa-search"></i>
+          <span class="recherche">recherche</span>
+        </button>
         </div>
         
         <!-- filte de recherche -->
@@ -124,7 +143,7 @@
             <a href="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
               <img
                 class="room_image"
-                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="Photographie de l'hôtel du port à Marseille"
               />
               <h3>Hôtel du port</h3>
@@ -143,7 +162,7 @@
             <a href="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg">
               <img
                 class="room_image"
-                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="Photographie de l'hôtel des mouettes à Marseille"
               />
               <h3>Hôtel des mouettes</h3>
@@ -202,7 +221,7 @@
               <a href="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                 <img
                   class="room_image"
-                  src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                   alt="Photographie de l'hôtel chez Amina à Marseille"
                 />
                 <h3>Hôtel chez Amina</h3>
@@ -228,6 +247,7 @@
         </div>
         
         <div class="most_popular_list">
+          <div class="most_popular_box">
           <a href="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
             <img
             class="popular_room_image"
@@ -256,7 +276,8 @@
               </div>
             </div>  
           </a>
-          
+          </div>
+          <div class="most_popular_box">
           <a href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg">
             <img
             class="popular_room_image"
@@ -283,11 +304,12 @@
               ><i class="fas fa-star"></i
               ></span>
             </div>
+            </div>
+          </a>
           </div>
-        </a>
-          
-          
-        <a href="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+          <div class="most_popular_box">
+        
+          <a href="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
           <img
           class="popular_room_image"
           src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -314,8 +336,8 @@
               ></span>
             </div>
           </div>
-        </a>
-      
+          </a>
+          </div>
       </div>
       </div>
     </section>  
@@ -324,6 +346,7 @@
       <section class="activity" id="ancre-2">
         <h2>Activités à Marseille</h2>
         <div class="activity_list">
+          <div class="activity_box">
           <a href="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
             <img
               class="activity_image_L"
@@ -332,7 +355,8 @@
             />
             <h3>Vieux Port</h3>
           </a>
-
+        </div>
+        <div class="activity_box">
           <a href="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
             <img
               class="activity_image_M"
@@ -341,7 +365,8 @@
             />
             <h3>Fort de Pomègues</h3>
           </a>
-
+        </div>
+        <div class="activity_box">
           <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
             <img
               class="activity_image_S"
@@ -350,7 +375,8 @@
             />
             <h3>Îles du Frioul</h3>
           </a>
-
+        </div>
+        <div class="activity_box">
           <a href="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
             <img
               class="activity_image_L"
@@ -359,7 +385,8 @@
             />
             <h3>Parc National des Calanques</h3>
           </a>
-
+        </div>
+        <div class="activity_box">
           <a href="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
             <img
               class="activity_image_S"
@@ -368,7 +395,8 @@
             />
             <h3>Notre-dame-de-la-Garde</h3>
           </a>
-
+        </div>
+        <div class="activity_box">
           <a href="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
             <img
               class="activity_image_M"
@@ -377,7 +405,7 @@
             />
             <h3>Parc Longchamp</h3>
           </a>
-        
+        </div>
         </div>
       </section>
       
