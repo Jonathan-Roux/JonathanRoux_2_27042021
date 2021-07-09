@@ -143,7 +143,7 @@
   .search_button {
     width: 115px;
     border: none;
-    font-size: 15;
+    font-size: 15px;
     color: #f2f2f2;
     background-color: #0065fc;
     background-size: 18px;
@@ -216,7 +216,6 @@
   .city_info{
     display: flex;
     align-items: center;
-    padding: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -282,7 +281,6 @@ margin-left: 40px;
 
 .hebergement_info{
   display: flex;
-  size: 80px;
   background-color: white;
   border: 1px solid #f2f2f2;
   border-radius: 20px;
@@ -338,7 +336,6 @@ height:25%;
 .most_popular_box{
 justify-content: center;
 margin: 0 auto;
-padding: 0 auto;
 width:95%;
 }
 
@@ -468,10 +465,6 @@ footer {
 footer a {
   text-decoration: none;
   color: black;
-}
-
-footer ul {
-  padding-inline-start: 0;
 }
 
 footer li {
@@ -641,7 +634,6 @@ margin:0 auto;
   margin-left: 0;
   align-items: center;
   padding: 0;
-  padding: left 0;
   width:max-content
 
   
